@@ -3,3 +3,8 @@
 # 2nd for Deleting nest folders * it's hard too
 import os
 
+
+def get_dir_size(path='.'):
+    # size of path in KB
+    total = 0
+

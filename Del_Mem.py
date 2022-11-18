@@ -11,5 +11,8 @@ def get_dir_size(path='.'):
         for entry in it:
             if entry.is_file():
                 total += entry.stat().st_size // 1024
+            elif entry.is_dir():
+                total += get_dir_size(entry.path)
+
     return total
 

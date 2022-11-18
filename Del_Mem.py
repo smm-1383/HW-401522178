@@ -16,3 +16,7 @@ def get_dir_size(path='.'):
 
     return total
 
+def deltree(target):
+    # delete target directory and its tree
+    for d in os.listdir(target):
+        ...
